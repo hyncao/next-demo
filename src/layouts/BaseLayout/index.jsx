@@ -2,7 +2,7 @@ import Head from 'next/Head';
 import { Row, Col } from 'antd';
 import Header from '../Header';
 import Footer from '../Footer';
-import styles from './index.module.scss';
+import styles from './index.scss';
 
 class BaseLayout extends React.Component {
   constructor(props) {

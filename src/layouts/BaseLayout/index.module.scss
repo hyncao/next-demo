@@ -1,0 +1,9 @@
+@import 'styles/constant.scss';
+
+.content {
+  width: $max-width;
+  min-height: calc(100vh - #{$header-height} - #{$footer-height});
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+}

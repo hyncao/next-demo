@@ -5,9 +5,9 @@
     "jsx": "react",
     "baseUrl": "./src",
     "paths": {
+      "layouts/*": ["./layouts/*"],
       "components/*": ["./components/*"],
-      "styles/*": ["./styles/*"],
-      "assets/*": ["../public/*"]
+      "styles/*": ["./styles/*"]
     }
   }
 }

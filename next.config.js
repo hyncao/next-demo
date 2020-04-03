@@ -2,8 +2,17 @@
 const withCss = require('@zeit/next-css');
 const withSass = require('@zeit/next-sass');
 
+const myWebpack = {
+  webpack: config => {
+    config.output.publicPath = '.';
+    return config;
+  },
+};
+
 const cssWebpack = withCss({
+  ...myWebpack,
   webpack: (config, { isServer }) => {
+    console.log(config.output);
     if (isServer) {
       const antStyles = /antd\/.*?\/style\/css.*?/;
       const origExternals = [...config.externals];
